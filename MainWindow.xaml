@@ -1,0 +1,31 @@
+﻿<Window x:Class="kyrsah.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kyrsah"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,44.6,0">
+        <TextBlock x:Name="List" HorizontalAlignment="Center" TextAlignment="Center" Margin="130,43,130,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="319" Width="Auto"/>
+        <Button Content="Расшифровать" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Width="100" Height="29" Click="Button_Click_1"/>
+        <Button Content="Зашифровать" HorizontalAlignment="Left" Margin="151,10,0,0" VerticalAlignment="Top" Width="108" Height="29" Click="Button_Click"/>
+        <TextBox x:Name="vvod" HorizontalAlignment="Left" Height="23" Margin="361,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TextChanged="TextBox_TextChanged" Visibility="Hidden"/>
+        <TextBlock x:Name="path" HorizontalAlignment="Left" Margin="228,179,0,0" TextWrapping="Wrap" Text="Введите путь к файлу" VerticalAlignment="Top" Width="128" Height="23" Visibility="Hidden"/>
+        <Button x:Name="begin" Content="Начать" HorizontalAlignment="Left" Margin="427,220,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="begin_Click"/>
+        <Button x:Name="begin2" Content="Начать" HorizontalAlignment="Left" Margin="427,220,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="begin2_Click"/>
+        <Button x:Name="begin3" Content="Начать" HorizontalAlignment="Left" Margin="427,220,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="begin3_Click"/>
+        <Button Name="klava" Content="Информация с клавиатуры" HorizontalAlignment="Left" Margin="399,226,0,0" VerticalAlignment="Top" Width="170" Height="30" Visibility="Hidden" Click="klava_Click"/>
+        <Button Name="file" Content="Информация из файла" HorizontalAlignment="Left" Margin="189,226,0,0" VerticalAlignment="Top" Width="149" Height="30" Visibility="Hidden" Click="file_Click"/>
+        <TextBlock Name="textforin" HorizontalAlignment="Left" Margin="257,166,0,0" TextWrapping="Wrap" Text="Выбирите, как вы хотите ввести данные " VerticalAlignment="Top" Width="234" Height="29" Visibility="Hidden"/>
+        <TextBox Name="keyf" HorizontalAlignment="Left" Height="51" Margin="361,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" Visibility="Hidden"/>
+        <TextBlock Visibility="Hidden" Name="textkey" HorizontalAlignment="Left" Margin="162,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="51"><Run Text="Введите ключ или не вводите ничег"/><Run Text="о"/><Run Text=", чтобы использовать ключ по умолчанию"/></TextBlock>
+        <TextBlock Name="textforcr" HorizontalAlignment="Left" Margin="264,179,0,0" TextWrapping="Wrap" Text="Введите текст" VerticalAlignment="Top" Height="23" Width="92" Visibility="Hidden"/>
+        <TextBlock Visibility="Hidden" Name="zapis" HorizontalAlignment="Left" Margin="472,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"><Run Text="Хотите записат"/><Run Text="ь"/><Run Text=" результат в отдельный файл"/><Run Text="?"/></TextBlock>
+        <Button Visibility="Hidden" Name="yes"  Content="Да" HorizontalAlignment="Left" Margin="651,15,0,0" VerticalAlignment="Top" Width="75" Click="yes_Click"/>
+        <TextBlock x:Name="textforpath" Visibility="Hidden" HorizontalAlignment="Left" Margin="83,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267"><Run Text="Введите полный путь к файлу для сохранения"/><Run Text=" в формате "/><Run Text="D:\...\&quot;"/><Run Text="Название  файла"/><Run Text="&quot;.txt"/></TextBlock>
+        <Button Visibility="Hidden" x:Name="download" Content="Скачать" HorizontalAlignment="Left" Margin="374,226,0,0" VerticalAlignment="Top" Width="75" Click="download_Click"/>
+        <TextBlock Visibility="Hidden" Name="exception" HorizontalAlignment="Left" Height="23" Margin="151,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="465"/>
+
+    </Grid>
+</Window>
